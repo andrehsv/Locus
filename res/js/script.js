@@ -105,9 +105,9 @@ function randomComparison() {
     return Math.random() - 0.5;
 }
 
+const WORD_AMOUNT = 20;
 var wordSequenceDiv = document.getElementById('word-sequence');
-var wordSequence = words.sort(randomComparison).slice(0,20);
-var wordSequenceFormated = [];
+var wordSequence = words.sort(randomComparison).slice(0, WORD_AMOUNT);
 
 for (let word of wordSequence) {
     wordSequenceDiv.innerHTML += (wordSequence.indexOf(word)+1) + ". " + word +'<br>'
