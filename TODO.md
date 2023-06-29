@@ -1,1 +1,1 @@
-- Fazer a lógica do botão "Gerar"
+- [ ] Fazer a lógica do botão "Gerar"
