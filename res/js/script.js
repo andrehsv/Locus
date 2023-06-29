@@ -110,11 +110,12 @@ var wordSequenceDiv = document.getElementById('word-sequence');
 var wordSequence = words.sort(randomComparison).slice(0, WORD_AMOUNT);
 
 for (let word of wordSequence) {
-    wordSequenceDiv.innerHTML += (wordSequence.indexOf(word)+1) + ". " + word +'<br>'
+    let expectedHtml = (wordSequence.indexOf(word)+1) + ". " + word +'<br>';
+    wordSequenceDiv.innerHTML += expectedHtml;
 }
 
 var checkbox = document.getElementById('esconder-checkbox');
-var button = document.getElementById('gerar-button')
+//var button = document.getElementById('gerar-button')
 
 checkbox.addEventListener('change', (event) => {
     if (event.currentTarget.checked) {
